@@ -341,12 +341,6 @@ npm run clean
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🆘 Support
-
-- **Discord**: [Join our Discord](https://discord.gg/pumpswap)
-- **Telegram**: [@Takhi](https://t.me/@hi_3333)
-- **Issues**: [GitHub Issues](https://github.com/PioSol7/Solana_PumpSwap_Bot/issues)
-
 ## 🙏 Acknowledgments
 
 - Solana Labs for the Solana blockchain
