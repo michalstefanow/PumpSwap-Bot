@@ -1,20 +1,60 @@
 {
-  "extends": "./tsconfig.base.json",
-  // "include": ["4-layered/src/**/*", "constants", "utils", "trading-modules/trading", "streaming", "token-filters", "raydium", "jito", "4-layered/main-algo"],
-  //"exclude": ["node_modules"],
   "compilerOptions": {
-
-    "module": "es2022",
-    "target": "es2022",             
-    "allowJs": true,                 /* Specify what module code is generated. */
-    "moduleResolution": "node",                         /* Specify what module code is generated. */            /* Allow 'import x from y' when a module doesn't have a default export. */
-    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
-    // "preserveSymlinks": true,                         /* Disable resolving symlinks to their realpath. This correlates to the same flag in node. */
-    "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
-
-    /* Type Checking */
-    //"strict": true,     
-    "strictNullChecks": false, // Add this                                 /* Enable all strict type-checking options. */                     /* Skip type checking .d.ts files that are included with TypeScript. */
-    "skipLibCheck": true                                /* Skip type checking all .d.ts files. */
+    "target": "ES2020",
+    "module": "commonjs",
+    "lib": ["ES2020"],
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "removeComments": false,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "exactOptionalPropertyTypes": false,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": false,
+    "noUncheckedIndexedAccess": false,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "@/types/*": ["src/types/*"],
+      "@/services/*": ["src/services/*"],
+      "@/utils/*": ["src/utils/*"],
+      "@/config/*": ["src/config/*"],
+      "@/connection/*": ["src/connection/*"],
+      "@/sdk/*": ["src/sdk/*"],
+      "@/cli/*": ["src/cli/*"],
+      "@/jito/*": ["src/jito/*"],
+      "@/nozomi/*": ["src/nozomi/*"],
+      "@/IDL/*": ["src/IDL/*"]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.test.ts",
+    "**/*.spec.ts"
+  ],
+  "ts-node": {
+    "esm": false,
+    "experimentalSpecifierResolution": "node"
   }
 }
