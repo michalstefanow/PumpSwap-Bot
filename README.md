@@ -59,8 +59,8 @@ src/
 
 ```bash
 # Clone the repository
-git clone https://github.com/PioSol7/Solana_PumpSwap_Bot.git
-cd Solana_PumpSwap_Bot
+git clone https://github.com/michalstefanow/PumpSwap-Bot
+cd PumpSwap-Bot
 
 # Install dependencies
 npm install
