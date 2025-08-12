@@ -348,6 +348,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Jito Labs for bundle trading
 - Nozomi for MEV protection
 
+## Contact
+- Telegram [@michalstefanow](https://t.me/mylord1_1)
+- Twitter [@michalstefanow](https://x.com/michalstefanow)
+
 ---
 
 **⚠️ Disclaimer**: This software is for educational and development purposes. Use at your own risk. Always test with small amounts before using with significant funds.
